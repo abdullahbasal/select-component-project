@@ -50,12 +50,14 @@ const SelectComponent: React.FC<SelectComponentProps> = ({
         !dropdownRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
+        setFilter("");
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      setFilter("");
     };
   }, []);
 
