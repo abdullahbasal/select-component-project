@@ -59,13 +59,13 @@ const App: React.FC = () => {
       <div style={{ display: "flex", flexDirection: "row", gap: 20 }}>
         <SelectComponent
           label="Team member"
-          placeholder="Select team member1"
+          placeholder="Select team member"
           placeholderIcon={true}
           onOptionSelect={handleOptionSelect}
         />
         <SelectComponent
           label="Team member"
-          placeholder="Select team member1"
+          placeholder="Select team member"
           placeholderIcon={true}
           iconType={IconTypes.UserImage}
           onOptionSelect={handleOptionSelect}
