@@ -47,14 +47,13 @@ const App: React.FC = () => {
           iconType={IconTypes.UserImage}
           placeholder="Select team member"
           onOptionSelect={handleOptionSelect}
-          disabledOptions={[1, 2]}
+          disabledOptions={[1]}
         />
         <SelectComponent
           label="Team member"
           iconType={IconTypes.GreenCircle}
           placeholder="Select team member"
           onOptionSelect={handleOptionSelect}
-          disabledOptions={[1, 2]}
         />
       </div>
       <div style={{ display: "flex", flexDirection: "row", gap: 20 }}>
@@ -63,7 +62,6 @@ const App: React.FC = () => {
           placeholder="Select team member1"
           placeholderIcon={true}
           onOptionSelect={handleOptionSelect}
-          disabledOptions={[1, 2]}
         />
         <SelectComponent
           label="Team member"
@@ -71,7 +69,6 @@ const App: React.FC = () => {
           placeholderIcon={true}
           iconType={IconTypes.UserImage}
           onOptionSelect={handleOptionSelect}
-          disabledOptions={[1, 2]}
           multiple={true}
           filterable={true}
         />
